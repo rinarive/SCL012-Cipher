@@ -9,12 +9,33 @@ body {
     font-size:10px;
     margin-bottom: 100px;
 }
+
+.logo {
+    position: absolute;
+    width: 280px;
+    height: 220px;
+    left: 609px;
+    top: 250px;
+    
+}
+.name {
+    position: absolute;
+    width: 227px;
+    height: 37px;
+    left: 624px;
+    top: 460px;
+}
 #btn1{
     position: absolute;
     width: 130px;
     height: 40px;
     left: 679px;
     top: 585px;
+}
+#loging {
+    display: none;
+    text-align: center;
+    padding-top: 50px;  
 }
 #btn2{
     position: absolute;
@@ -23,17 +44,13 @@ body {
     left: 690px;
     top: 540px;
 }
-#loging {
-    display: none;
-    text-align: center;
-    padding-top: 50px;  
-}
+
 .text{
     position: absolute;
     width: 364px;
     height: 50px;
     left: 573px;
-    top: 282px;
+    top: 240px;
     font-family: 'Segoe Print';
     font-style: normal;
     font-weight: normal;
@@ -42,8 +59,15 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
-    color: rgba(148, 58, 180, 0.54);
+    color:white;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#cipher {
+    position: absolute;
+    display: none;
+    padding: 0px;
+    font-family: Arial;
+    width: 20%;
 }
 .num{
     position: absolute;
@@ -58,35 +82,6 @@ body {
     height: 35px;
     left: 621px;
     top: 407px;
-}
-.show {
-    font-family: 'Architects Daughter', cursive;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 123.2%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    text-transform: capitalize;
-    color: #FFF7F7;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
-}
-#cod{
-    position: absolute;
-    width: 220px;
-    height: 45px;
-    left: 476px;
-    top: 220px;
-    cursor:pointer;
-}
-#deCod{
-    position: absolute;
-    width: 284px;
-    height: 33px;
-    left: 860px;
-    top: 220px;
-    cursor:pointer;
 }
 #password{
     position: absolute;
@@ -118,14 +113,30 @@ body {
     height: 31px;
     left: 570px;
     top: 590px;
+    
 }
 #decodificar{
-    
     position: absolute;
     width: 125px;
     height: 31px;
     left: 709px;
     top: 590px;
+}
+.copy{
+    position: absolute;
+    padding: 0.6px;
+    left: 296%;
+    margin-top: 164%;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-family: Arial;
+
+}
+.copy:active {
+    position:relative;
+    font-size:small;
+    top:1px;
 }
 #btn3{
     position: absolute;
@@ -133,22 +144,6 @@ body {
     height: 31px;
     left: 854px;
     top: 590px;
-}
-#cipher {
-    position: absolute;
-    display: none;
-    padding: 0px;
-    font-family: Arial;
-    width: 20%;
-}
-
-.logo {
-    position: absolute;
-    width: 280px;
-    height: 220px;
-    left: 609px;
-    top: 250px;
-    
 }
 input[type=text]{
     border-radius:10px;
@@ -160,22 +155,13 @@ input[type=text]{
     padding: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
-
 }
-.name {
-    position: absolute;
-    width: 227px;
-    height: 37px;
-    left: 624px;
-    top: 460px;
-}
-
 .text2 {
     position: absolute;
     width: 386px;
     height: 79px;
     left: 561px;
-    top: 175px;
+    top: 120px;
     color: #FFF7F7;  
     font-family: 'Shadows Into Light Two', cursive;
     font-style: normal;
@@ -186,7 +172,6 @@ input[type=text]{
     text-align: center;
     text-transform: capitalize; 
 }
-
 .text1 {
     color: white;
     font-family:'Shadows Into Light Two', cursive;
@@ -205,8 +190,7 @@ input[type=text]{
     height: 74px;
     left: 600px;
     top: 110px;
-    mix-blend-mode: normal;
-   
+    mix-blend-mode: normal;   
 }
 .buttons {
 	background-color:rgb(78, 150, 218);
@@ -218,20 +202,12 @@ input[type=text]{
 	color:#ffffff;
 	font-family:Arial;
     font-size:17px;
-    margin-bottom: 30px;
-   
+    margin-bottom: 30px; 
 }
 .buttons:hover {
 	background-color:#774cc6;
 }
 .buttons:active {
-	position:relative;
-	top:1px;
-}
-.show:hover {
-    text-shadow: 0px 4px 4px rgba(1);
-}
-.show:active {
 	position:relative;
 	top:1px;
 }

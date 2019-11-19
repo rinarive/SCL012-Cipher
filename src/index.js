@@ -11,19 +11,6 @@ function inicio () {
     loging.style.display = "block"
     cipher.style.display = "none"
 };
-document.getElementById("cod").addEventListener('click',hability);
-function hability(){
- 
-
-   
-};
-document.getElementById("deCod").addEventListener('mouseover',hability2);
-function hability2(){
-
-
-  
-
-};
 document.getElementById("btn2").addEventListener("click",enviar);
 function enviar () {
     let age = document.getElementById("age").value;
@@ -38,4 +25,30 @@ function enviar () {
 document.getElementById("btn3").addEventListener("click",salir);
 function salir () {
     window.location.reload()
+};
+
+document.getElementById("codificar").addEventListener("click", passCod)
+function passCod() {
+ let password = document.getElementById("password").value;
+ window.cipher.encode (password,codCipher);
+ let resultado = document.getElementById("resultado"); 
+ resultado.innerHTML = window.cipher.encode (password,codCipher);
+
+};
+  
+
+document.getElementById("decodificar").addEventListener("click", passDecod);
+function passDecod() {
+ let password = document.getElementById("password").value;
+ window.cipher.decode(password,codCipher);
+ let resultado = document.getElementById("resultado");
+ resultado.innerHTML = window.cipher.decode (password,codCipher);
+ 
+};
+let resultCopy= document.getElementById('resultCopy');
+resultCopy.addEventListener('click', copying);
+function copying() {
+  resultado.select();
+  document.execCommand("copy");
+  password.value=""
 };

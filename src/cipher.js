@@ -1,34 +1,34 @@
 window.cipher = {
-  encode: () => {
-    /* Acá va tu código */
-    let password = document.getElementById("password").value;
- let cipEncode = "";
+  encode: (password, codCipher) => {
+    let cipEncode = "";
   for (let i = 0; i < password.length; i++) {
     let txt = password.charCodeAt(i);
-    if (65 <= txt && txt <= 90) {
+     if (65 <= txt && txt <= 90) {
       cipEncode += String.fromCharCode(
       ((txt - 65 + parseInt(codCipher)) % 26) + 65);
-    }else{
+    } else if (97 <= txt && txt <= 122) {
+      cipEncode += String.fromCharCode(
+        ((txt - 97 + parseInt(codCipher)) % 26) + 97);
+    } else {
       cipEncode += password.charAt(i);
     } 
   }
-  let resultado = document.getElementById("resultado"); 
-   resultado.innerHTML = cipEncode;
+   return cipEncode;
   },
-  decode: () => {
-    /* Acá va tu código */
-    let password = document.getElementById("password").value;
- let cipDecode = "";
+  decode: (password, codCipher) => {
+    let cipDecode = "";
   for (let i = 0; i < password.length; i++) {
     let txt = password.charCodeAt(i);
     if (65 <= txt && txt <= 90) {
      cipDecode += String.fromCharCode(
-     ((txt + 65 - parseInt(codCipher)) % 26) + 65);
-    }else{
-      cipDecode += password.charAt(i);
+     ((txt - 90 - parseInt(codCipher)) % 26) + 90);
+    } else if (97 <= txt && txt <= 122) {
+      cipDecode += String.fromCharCode(
+        ((txt - 122 - parseInt(codCipher)) % 26) + 122);
+    }else{  
+        cipDecode += password.charAt(i);
     }
   }
-  let resultado = document.getElementById("resultado");
-    resultado.innerHTML = cipDecode;
+   return cipDecode;
   }
 };

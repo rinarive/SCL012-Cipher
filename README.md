@@ -1,102 +1,26 @@
-# Cifrado César
+# REMEMBERME
 
-Cifrar significa codificar. El [cifrado César](https://en.wikipedia.org/wiki/Caesar_cipher) es uno de los primeros métodos de cifrado conocidos. El emperador romano Julio César lo usaba para enviar órdenes secretas a sus generales en los campos de batalla.
+*REMEMBERME* es una aplicación para cifrado y descifrado de contraseñas. 
+Éste producto va dirigido a usuarios cuyas vidas laborales le exigen un cambio frecuente de password como médida de seguridad para resguardar información confidencial, así como tambien al público en general.
 
-![caeser-cipher](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Caesar3.svg/2000px-Caesar3.svg.png)
+El producto que estoy desarrollando tiene como visión llegar a ser capaz de almacenar en una sola contraseña todas las demás que el usuario quiera almacenar de manera segura y encriptada, para su fácil acceso y uso, ésto quitará de la cabeza de los usuarios muchos códigos que con frecuencia olvida y que para encontralos debe realizar varios pasos un tanto tedioso, con *REMEMBERME* solo necesita un número y una palabra secreta que sepas recordarás con facilidad, nada más... también le dará ideas de claves seguras a la hora de renovarlas constantemente. 
 
-El cifrado césar es una de las técnicas más simples para cifrar un mensaje. Es un tipo de cifrado por sustitución, es decir que cada letra del texto original es reemplazada por otra que se encuentra un número fijo de posiciones (desplazamiento) más adelante en el mismo alfabeto.
+## Proceso de prototipado UX
+Para el diseño de esta aplicación se tomaron en cuenta los requerimientos de los usuarios iniciales para los cuales está dirigida la herramienta, en el proceso de investigación y de usabilidad entreviste a un usuario con la finalidad de recopilar sus necesidades y determinar el producto que podía ofrecer usando el objetivo principal del proyecto *Cifrado César*. En la entrevista la pregunta inicial fué ¿Cómo puede ayudar en tu vida laboral una aplicación que se base en el cifrado César?, su respuesta inmediata estuvo dirigida a sus Password. Desde allí comencé a indagar más en cómo podía ayudarle a gestionar y administrar sus password de manera segúra, fácil y rápida.
 
-Por ejemplo, si usamos un desplazamiento (_offset_) de 3 posiciones:
+Inicié un bosquejo a lápiz en conjunto con el entrevistado el cual quedo así:
 
-- La letra A se cifra como D.
-- La palabra CASA se cifra como FDVD.
-- Alfabeto sin cifrar: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-- Alfabeto cifrado: D E F G H I J K L M N O P Q R S T U V W X Y Z A B C
+![Screenshot](sketch-lapiz.png) 
 
-En la actualidad, todos los cifrados de sustitución simple se descifran con mucha facilidad y, aunque en la práctica no ofrecen mucha seguridad en la comunicación por sí mismos; el cifrado César sí puede formar parte de sistemas más complejos de codificación, como el cifrado Vigenère, e incluso tiene aplicación en el sistema ROT13.
+En el sketch inicial el proyecto se tornó sumamente ambisioso generando mucha interacción con los usuarios y multiples aplicabilidades en su vida cotidiana y laboral, emocionada pero consternada decidí hacer algunas modificaciones que se adaptaran al tiempo de planificación y desarrollo del proyecto para poder cumplir con los requerimientos del mismo y así alcanzar el reto propuesto.
 
-## Resumen del proyecto
-
-¿Qué tengo que hacer exactamente? En este proyecto crearás la primera aplicación web del _bootcamp_. Servirá para que el usuario pueda cifrar y descifrar un texto indicando un desplazamiento específico de caracteres (_offset_).
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se necesitaría cifrar un mensaje y pensar en cómo debe ser esa experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?) etc. 
-
-Algunas ideas de ejemplo:
-
-- Crear claves seguras para el email.
-- Encriptar/cifrar una tarjeta de crédito.
-- Herramienta de mensajería interna de una organización de derechos humanos en una zona de conflicto.
-- Mensajería secreta para parejas.
+En un segundo Sketch realizado con la herramienta Balsamiq le dí un giro al diseño de la aplicación, quitando algunas pantallas y funciones que al momento generaban más disposión de tiempo. 
 
 
-## Consideraciones generales
+![screenshot](palsamik.png)
 
-- Este proyecto se debe resolver de manera individual.
-- El proyecto será entregado subiendo tu código a GitHub (commit/push) y la interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no te preocupes, lo aprenderás durante este proyecto.
-- Tiempo para completarlo: El proyecto dura 2 semanas, trabaja con sprints y planificando tus tareas.
 
-## Objetivos de aprendizaje
-
-En este proyecto aprenderás a construir una aplicación web que interactúe con el usuario a través del navegador y la lógica basada en esa interacción. Dicho en palabras sencillas, aprenderás a:
-
-#### UX
-- Entender las **necesidades del usuario** y realizar propuestas para esas necesidades. 
-
-#### HTML y CSS
-- Mostrar elementos de formulario en la pantalla.
-
-#### DOM
-- Permitir al usuario interactuar (**eventos del DOM**) y hacer algo cuando ocurran dichos eventos (cifrar/descifrar).
-- Actualizar la pantalla con los resultados (**manipular el DOM**).
-
-#### JS
-- Manipular _**strings**_ (cadenas de texto).
-- Usar **control de flujo** (bucles, condicionales, ...).
-- **Implementar funciones** dada una descripción de su comportamiento.
-
-### Testing
-- Verificar tu implementación con **pruebas unitarias**.
-
-### Git y Github
-- Comandos de git (add | commit | pull | status | push).
-- Manejo de repositorios de GitHub (clone | fork | gh-pages).Manejo de repositorios de GitHub (clone | fork | gh-pages).
-
-### Buenas Pràcticas
-- Organizar tu tiempo y priorizar tareas en un entorno de **alta incertidumbre**.
-
-### Consideraciones.
-
-Usa este alfabeto simple (solamente mayúsculas y sin ñ):
-
-- A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-
-### Sotf Skills o Habilidades Blandas
-- **Planificación, organización y manejo del tiempo** : Organizarse de manera general, haciendo una estimación aproximada de los tiempos que se necesitarán para la realización del proyecto. Conocer las ceremonias y artefactos ágiles (sprint planning, dailys, retrospectiva, tablero al menos, etc) a pesar de que no se utilicen con regularidad.
-- **Autoaprendizaje** : Demostrar interés y adquirir nuevos conocimientos autónomamente, estudiando de manera independiente, lo que se traduce, en que cuando es necesario, la estudiante buscará aclarar conceptos y resolver dudas sobre la materia.
-- **Presentaciones** : Utilizar ciertas estrategias para hablar en público (tono y ritmo de voz adecuado, contacto visual con el público, interacción con medios de presentación), que permitan asegurar un mediano entendimiento de la audiencia.
-- **Adaptabilidad** : Afrontar los cambios inesperados o nuevos desafíos con una actitud positiva, aunque no necesariamente se logre accionar o adaptarse de la mejor manera a los diferentes contextos.
-- **Solución de problemas** : Trabajar en la búsqueda y en la elaboración de soluciones alternativas a problemas de mediana complejidad.
-- **Responsabilidad** : Demostrar actitud de compromiso, reflejandolo en la entrega de trabajo a tiempo, llegando a la hora acordada y/o avisando cuando no se pueda asistir.
-- **Dar y recibir feedback** : Escuchar los comentarios y críticas de los demás de manera respetuosa, y/o comunicar a los demás las opiniones de forma constructiva.
-- **Comunicación eficaz** : Comunicar ideas a los demás cuando es necesario, aunque no siempre se fomenten de manera proactiva estas instancias de comunicación.
-
-#### Definición del producto
-
-En el README.md, cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso para definir el producto final a nivel de experiencia y de interfaz.
-
-- Quiénes son los principales usuarios de producto.
-- Cuáles son los objetivos de estos usuarios en relación con tu producto.
-- Cómo crees que el producto que estás creando está resolviendo sus problemas.
-
-#### Interfaz de usuario (UI)
-
-La interfaz debe permitir al usuario:
-- Elegir un desplazamiento (_offset_) indicando cuántas posiciones queremos que el cifrado desplace cada caracter.
-- Insertar un mensaje (texto) que queremos cifrar.
-- Ver el resultado del mensaje cifrado.
-- Insertar un mensaje (texto) a descifrar.
-- Ver el resultado del mensaje descifrado.
-
+[FIGMA](https://www.figma.com/proto/e1gSaERorivzTBpGzRDgCN/Untitled?node-id=12%3A4&scaling=min-zoom)
 #### Scripts / Archivos
 
 * `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
