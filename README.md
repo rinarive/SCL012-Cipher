@@ -1,28 +1,47 @@
 # REMEMBERME
 
 *REMEMBERME* es una aplicación para cifrado y descifrado de contraseñas. 
-Éste producto va dirigido a usuarios cuyas vidas laborales le exigen un cambio frecuente de password como médida de seguridad para resguardar información confidencial, así como tambien al público en general.
+Éste producto va dirigido a usuarios cuyas vidas laborales le exigen un cambio frecuente de password como médida de seguridad para resguardar información confidencial, así como tambien al público en general que así lo requiera.
 
-El producto que estoy desarrollando tiene como visión llegar a ser capaz de almacenar en una sola contraseña todas las demás que el usuario quiera almacenar de manera segura y encriptada, para su fácil acceso y uso, ésto quitará de la cabeza de los usuarios muchos códigos que con frecuencia olvida y que para encontralos debe realizar varios pasos un tanto tedioso, con *REMEMBERME* solo necesita un número y una palabra secreta que sepas recordarás con facilidad, nada más... también le dará ideas de claves seguras a la hora de renovarlas constantemente. 
+El producto que estoy desarrollando tiene como visión llegar a ser capaz de almacenar en una sola contraseña todas las demás que el usuario quiera almacenar de manera segúra y encriptada, para su fácil acceso y uso, ésto quitará de la cabeza de los usuarios muchos códigos que con frecuencia olvida y que para encontralos debe realizar varios pasos un tanto tediosos, con *REMEMBERME* solo necesita un número y una palabra secreta que sepas recordarás con facilidad, nada más... también le dará ideas de claves seguras a la hora de renovarlas constantemente. 
 
 ## Proceso de prototipado UX
 Para el diseño de esta aplicación se tomaron en cuenta los requerimientos de los usuarios iniciales para los cuales está dirigida la herramienta, en el proceso de investigación y de usabilidad entreviste a un usuario con la finalidad de recopilar sus necesidades y determinar el producto que podía ofrecer usando el objetivo principal del proyecto *Cifrado César*. En la entrevista la pregunta inicial fué ¿Cómo puede ayudar en tu vida laboral una aplicación que se base en el cifrado César?, su respuesta inmediata estuvo dirigida a sus Password. Desde allí comencé a indagar más en cómo podía ayudarle a gestionar y administrar sus password de manera segúra, fácil y rápida.
 
-Inicié un bosquejo a lápiz en conjunto con el entrevistado el cual quedo así:
+Inicié un bosquejo a lápiz en conjunto con el entrevistado el cual muestro a continuación:
 
-![Screenshot](sketch-lapiz.png) 
+![imagenes](src\imagenes\sketch-lapiz.png) 
 
 En el sketch inicial el proyecto se tornó sumamente ambisioso generando mucha interacción con los usuarios y multiples aplicabilidades en su vida cotidiana y laboral, emocionada pero consternada decidí hacer algunas modificaciones que se adaptaran al tiempo de planificación y desarrollo del proyecto para poder cumplir con los requerimientos del mismo y así alcanzar el reto propuesto.
 
 En un segundo Sketch realizado con la herramienta Balsamiq le dí un giro al diseño de la aplicación, quitando algunas pantallas y funciones que al momento generaban más disposión de tiempo. 
 
 
-![screenshot](palsamik.png)
+![imagenes](src\imagenes\prototipo-balsamiq.png)
+
+
+En ésta segunda propuesta se muestra una pantalla de inicio que solicita el nombre del usuario para dar personalización y brindar un saludo cordial en la segunda vista de pantalla, donde se le solicita al usuario ingresar su fecha de nacimiento y una palabra que le sea muy fácil recordar ésto con la finalidad de salvaguardar la información que ingresará a continuación y en pueda luego verificar información para recuperar claves si las llegara a olvidar, también para que el cifrado contenga informacion unica por cada usuario. En la tercera vista de página el usuario puede almacenar todas sus contraseñas encriptadas con su información personalizada (la suma de su fecha de nacimiento y su palabra secreta). Las contraseñas serían guardadas en una lista con los links de los sitio web y el usuario que corresponde a cada password para su fácil acceso al momento de descifrar.
+Como medida de seguridad para lograr descifrar las contraseñas el sistema le pedirá ingresar su palabra secreta y poder revelar el descifrado.
+La reducción de vistas en este segundo prototipo el usuario quedo conforme con la idea prensentada y se comenzó la construcción del proyecto esta vez usando una herramienta para un prototipado de alta fidelidad.
+
+## Test de Usabilidad.
+
+
+
+Para la realización del test de usabilidad se utilizó el prototipo de alta fidelidad creado a través de la herramienta FIGMA donde 5 usuarios probaron la apllicación con la tarea unica de codificar una contraseña propia, en ésta primera prueba recibí suficiente feed back para implementar cambios de diseño  que proporcionara más información para el correcto uso de la aplicación.
+
+![imagenes](src\imagenes\pag1-figma.png)
+![imagenes](src\imagenes\pag2-figma.png)
+![imagenes](src\imagenes\pag3-figma.png)
+Luego de los cambios realizados probé nuevamente la aplicación con 5 sujetos distintos a los anteriores y encontré que se perdían o se bloqueaban en el momento del cifrado pues manifestaban estar confundidos con la redundancia de palabras *codificar* y *decodificar*, las sugerencias iban enfocadas en dejar la aplicacion más intuitiva que explicativa. Entonces se eliminaron algunos pasos previos al cifrado en sí, como lo era escoger entre cifrar o descifrar, en este cambio se estableció que el usuario podrá cifrar o descifrar en la misma sesión.
+
+
+
+
+
 
 
 [FIGMA](https://www.figma.com/proto/e1gSaERorivzTBpGzRDgCN/Untitled?node-id=12%3A4&scaling=min-zoom)
-#### Scripts / Archivos
-
 * `README.md`: debe explicar cómo descargar, instalar y ejecutar la aplicación
   así como una introducción a la aplicación, su funcionalidad y decisiones de
   diseño que tomaron.
