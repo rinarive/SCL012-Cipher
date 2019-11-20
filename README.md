@@ -10,14 +10,14 @@ Para el diseño de esta aplicación se tomaron en cuenta los requerimientos de l
 
 Inicié un bosquejo a lápiz en conjunto con el entrevistado el cual muestro a continuación:
 
-![imagenes](src\imagenes\sketch-lapiz.png) 
+![sketch-lapiz](src\imagenes\sketch-lapiz.png) 
 
 En el sketch inicial el proyecto se tornó sumamente ambisioso generando mucha interacción con los usuarios y múltiples aplicabilidades en su vida cotidiana y laboral, emocionada pero consternada decidí hacer algunas modificaciones que se adaptaran al tiempo de planificación y desarrollo del proyecto para poder cumplir con los requerimientos del mismo y así alcanzar el reto propuesto.
 
 En un segundo Sketch realizado con la herramienta Balsamiq le dí un giro al diseño de la aplicación, quitando algunas pantallas y funciones que al momento generaban más disposión de tiempo. 
 
 
-![imagenes](src\imagenes\prototipo-balsamiq.png)
+![sketch-balsamiq](src\imagenes\prototipo-balsamiq.png)
 
 
 En ésta propuesta se muestra una pantalla de inicio que solicita el nombre del usuario para dar personalización y brindar un saludo cordial en la segunda vista de pantalla en la cual se le solicita al usuario ingresar su fecha de nacimiento y una palabra que le sea muy fácil recordar, ésto con la finalidad de salvaguardar la información que ingresará, también para que el cifrado contenga una data única por cada usuario, pues ésta se convertirá en la clave y offSet del cifrado. 
@@ -34,11 +34,11 @@ Para ésta instancia se creó un nuevo prototipo dándole un nuevo esquema que c
 
 
 
-A continuacion las vistas de las tres pantallas:
+A continuación las vistas de las tres pantallas:
 
-![imagenes](src\imagenes\pag1-figma.png)
-![imagenes](src\imagenes\pag2-figma.png)
-![imagenes](src\imagenes\pag3-figma.png)
+![pag1-FIGMA](src\imagenes\pag1-figma.png)
+![pag2-FIGMA](src\imagenes\pag2-figma.png)
+![pag3-FIGMA](src\imagenes\pag3-figma.png)
 
 ## Test de Usabilidad.
 Para la realización del test de usabilidad se utilizó el prototipo de alta fidelidad creado a través de la herramienta `FIGMA` donde 5 usuarios probaron la apllicación con la tarea única de codificar y decodificar una contraseña propia, en ésta primera prueba recibí suficiente feed back para implementar cambios de diseño  que proporcionara más información para el correcto uso de la aplicación.
@@ -59,7 +59,7 @@ Luego de los cambios realizados probé nuevamente la aplicación con 5 sujetos d
 
 Voilá ya lograste encriptar tu contraseña, ahora puedes hacerlos cuantas veces quieras, solo *RECUERDAME* tu número y tú palabra secreta. Click en `Volver`.
 
-https://rinarive.github.io/SCL012-Cipher/src/index.html (En éste enlace se puede probar la aplicación siguiendo las instrucciones antes descritas.)
+[REMEMBERME](https://rinarive.github.io/SCL012-Cipher/src/index.html) (En éste enlace se puede probar la aplicación siguiendo las instrucciones antes descritas.)
 
 
 
