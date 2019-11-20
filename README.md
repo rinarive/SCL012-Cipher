@@ -49,7 +49,6 @@ Luego de los cambios realizados probé nuevamente la aplicación con 5 sujetos d
 # Instrucciones de uso para *REMEMBERME*.
 
 1. Escribe tu Nombre y Apellido luego haz click en el botón `Entrar`.
-
 2. Ingresa un número que sea fácil de recordar, la aplicación sugiere que sea tu edad pero solo tu decides cual es tu número favorito.
 3. Ingresa una palabra secreta que también sea fácil de recordar.
 4. Haz click en el botón `Enviar`.
